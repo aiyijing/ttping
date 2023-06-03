@@ -39,7 +39,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./build/ttping-windows-arm64
+          asset_path: ./build/ttping-darwin-arm64
           asset_name: ttping-darwin-arm64
           asset_content_type: application/octet-stream
 
@@ -49,7 +49,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./build/ttping-windows-arm64
+          asset_path: ./build/ttping-darwin-amd64
           asset_name: ttping-darwin-amd64
           asset_content_type: application/octet-stream
 
@@ -59,7 +59,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./build/ttping-windows-arm64
+          asset_path: ./build/ttping-linux-amd64
           asset_name: ttping-linux-amd64
           asset_content_type: application/octet-stream
 
@@ -69,7 +69,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./build/ttping-windows-arm64
+          asset_path: ./build/ttping-linux-arm64
           asset_name: ttping-linux-arm64
           asset_content_type: application/octet-stream
 
@@ -79,7 +79,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./build/ttping-windows-arm64
+          asset_path: ./build/ttping-windows-amd64
           asset_name: ttping-windows-amd64
           asset_content_type: application/octet-stream
 

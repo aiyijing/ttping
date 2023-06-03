@@ -5,8 +5,10 @@ PLATFORMS := linux/amd64 linux/arm64 darwin/amd64 darwin/arm64 windows/amd64 win
 
 .PHONY: all clean
 
-all: clean $(PLATFORMS)
+all: clean tidy $(PLATFORMS)
 
+tidy:
+	go mod tidy
 clean:
 	rm -rf $(BUILD_DIR)
 
