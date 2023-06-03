@@ -35,12 +35,63 @@ jobs:
           draft: false
           prerelease: false
 
-      - name: Upload Binary
+      - name: Upload ttping-darwin-arm64
         id: upload_binary
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: build/
+          asset_path: ./build/
+          asset_name: ttping-darwin-arm64
+          asset_content_type: application/octet-stream
+
+      - name: Upload ttping-darwin-amd64
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./build/
+          asset_name: ttping-darwin-amd64
+          asset_content_type: application/octet-stream
+
+      - name: Upload ttping-linux-amd64
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./build/
+          asset_name: ttping-linux-amd64
+          asset_content_type: application/octet-stream
+
+      - name: Upload ttping-linux-arm64
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./build/
+          asset_name: ttping-linux-arm64
+          asset_content_type: application/octet-stream
+
+      - name: Upload ttping-windows-amd64
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./build/
+          asset_name: ttping-windows-amd64
+          asset_content_type: application/octet-stream
+
+      - name: Upload ttping-windows-arm64
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./build/
+          asset_name: ttping-windows-arm64
           asset_content_type: application/octet-stream
