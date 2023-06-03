@@ -3,10 +3,12 @@ package main
 import (
 	"errors"
 	"fmt"
-	"github.com/spf13/cobra"
+
 	"net/url"
 	"os"
-	"ttping/tt"
+
+	"github.com/aiyijing/ttping/tt"
+	"github.com/spf13/cobra"
 )
 
 var cfg = &tt.Config{}
