@@ -1,4 +1,4 @@
-module ttping
+module github.com/aiyijing/ttping
 
 go 1.20
 

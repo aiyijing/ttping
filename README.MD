@@ -13,13 +13,11 @@ TTPing 是一个网络 ping 工具，可用于执行 TCP、ICMP 和 HTTP 的网�
 
 ## 安装
 
-使用以下命令下载和安装 TTPing：
-
+1. 通过go install安装
+确保已经安装了Go编译器，并配置好了Go环境变量。
 ```shell
-go get -u github.com/aiyijing/ttping
+go install github.com/aiyijing/ttping
 ```
-
-确保你已经正确设置了Go开发环境，并且将`$GOPATH/bin`添加到系统的PATH变量中。
 
 ## 用法
 
