@@ -11,13 +11,20 @@ TTPing 是一个网络 ping 工具，可用于执行 TCP、ICMP 和 HTTP 的网�
 - chat-gpt 想对大家说的话
   ![示例图片](./chat-gpt-to-say.jpg)
 
-## 安装
+## 安装方法
 
 1. 通过go install安装
 确保已经安装了Go编译器，并配置好了Go环境变量。
 ```shell
 go install github.com/aiyijing/ttping
 ```
+2. 下载安装
+前往 [下载地址](https://github.com/aiyijing/ttping/releases)下载 ttping
+```shell
+chmod a+x ttping
+mv ttping /usr/local/bin/
+```
+
 
 ## 用法
 
