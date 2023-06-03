@@ -42,6 +42,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: build/ttping-${{ matrix.GOOS }}-${{ matrix.GOARCH }}
-          asset_name: ttping-${{ matrix.GOOS }}-${{ matrix.GOARCH }}
+          asset_path: build/
           asset_content_type: application/octet-stream
